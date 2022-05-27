@@ -22,11 +22,11 @@
         padding-left: 70px;
     }
     .cadre-image img{
-    display: flex;
-    justify-content: center;
-    width:  100%;
-    margin: 0;
-    overflow: visible;
+        display: flex;
+        justify-content: center;
+        width:  100%;
+        margin: 0;
+        overflow: visible;
     }
     .backfavoris{
         background: grey;
