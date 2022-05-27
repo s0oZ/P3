@@ -1,0 +1,32 @@
+@import "Normalize.css";
+@import "reset.css";
+.roboto-foot{
+    font-family: 'Raleway', sans-serif;
+    font-size: 90%;
+  }
+
+@media screen and (max-width:768px) {
+    footer{
+        width: 100%;
+        background-color: rgba(2, 2, 2, 0.80);
+        padding-bottom: 20px;
+    }
+    footer p {
+        color: white;
+        padding-bottom: 10px;
+    }
+    footer img{
+        width: 25%;
+        padding: 23px 0 15px 23px;
+        filter: invert(1);
+    }
+    #foot-menu{
+        padding-left:  23px;
+    }
+    .foot-icone{
+        padding-right: 10px;
+    }
+    #hand{
+        font-size: 80%;
+    }
+}
