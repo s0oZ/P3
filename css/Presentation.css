@@ -1,0 +1,46 @@
+@import "Normalize.css";
+@import "reset.css";
+
+main{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.cadre-image img{
+    display: flex;
+    justify-content: center;
+    width:  100%;
+    margin: 0;
+    overflow: visible;
+}
+.presentation{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+.favoris{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    background-color: #f6f6f6;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 45px;
+    position: absolute;
+    bottom: 0;
+}
+.coeur {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding-right: 25px;
+    padding-bottom: 7px;
+}
+.heart{
+    font-size: 150%;
+}
+.presentation h1{
+    font-weight: 400;
+    font-family: 'Shrikhand', cursive;
+    font-size: 180%;
+    padding:40px 0 0px 15px;
+    }

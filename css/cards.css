@@ -1,0 +1,63 @@
+@import "Normalize.css";
+@import "reset.css";
+
+.card{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    position: relative;
+}
+.card-description{
+    box-shadow: 0px 5px 20px #999;
+    max-width: 80%;
+    width: 80%;
+    background-color: white;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    padding: 10px;
+    margin: 10px 0 10px 10px;
+}
+.card h3{
+    max-width:85%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 115%;
+    font-weight: bold;
+}
+.para{
+    display: flex;
+    justify-content: space-between;
+    max-width: 80%;
+}
+.card p{
+    font-size: 90%;
+    padding-top: 7px;
+}
+.survolcard{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;   
+    background-color: #99E2D0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 20%;
+    margin: 10px 10px 10px 0px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.circle-check{
+    filter: invert(1);
+    font-size: 140%;
+}
+.sous-titre{
+    max-width: 70%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.price{
+    font-weight: 700;
+}
