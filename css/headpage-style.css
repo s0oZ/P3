@@ -7,18 +7,21 @@
         width: 100%;
     }
     header a{
-        font-size: 150%;
+        font-size: 140%;
         padding-left: 30px;
+        text-decoration: none;
+        color: black;
     }
     #entete-icone{
         display: flex;
         width: 100%;
         margin: 20px 0;
+        align-items: center;
     }
     #logoentete{
         display: flex;
         justify-content: center;
         width: 50%;
-        padding-left: 70px;
+        padding-left: 60px;
     }
    }
