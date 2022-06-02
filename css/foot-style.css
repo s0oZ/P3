@@ -3,14 +3,20 @@
 .roboto-foot{
     font-family: 'Raleway', sans-serif;
     font-size: 90%;
-  }
-
-@media screen and (max-width:768px) {
-    footer{
-        width: 100%;
-        background-color: rgba(2, 2, 2, 0.80);
-        padding-bottom: 20px;
-    }
+}
+a {
+    text-decoration: none;
+}
+footer li {
+    color: white;
+    padding-bottom: 10px;
+}
+footer{
+    width: 100%;
+    background-color: rgba(2, 2, 2, 0.80);
+    padding-bottom: 20px;
+}
+@media screen and (max-width:767px) {
     footer li {
         color: white;
         padding-bottom: 10px;
@@ -29,7 +35,40 @@
     #hand{
         font-size: 80%;
     }
-    a {
-        text-decoration: none;
+}
+@media screen and (min-width:768px){
+    #foot{
+        display: flex;
+        flex-direction: column;
+        max-width: 90%;
+        margin: auto;
+    }
+
+    #foot img{
+        max-width: 35%;
+        margin: auto;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    footer ul{
+        display: flex;
+        max-width: 90%;
+        margin: auto;
+        justify-content: space-around;
+        margin-bottom:  30px;
+    }
+    footer ul li{
+        display: flex;
+    }
+    .foot-icone{
+        padding-right: 10px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .roboto-foot{
+        font-size: 15px;
+    }
+    footer ul{
+        padding-bottom: 40px;
     }
 }

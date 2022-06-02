@@ -1,0 +1,9 @@
+#presentation{
+    display: flex;
+    flex-direction: row;
+    background: #f6f6f6;
+}
+#localisation{
+    display: flex;
+    flex-direction: row;
+}

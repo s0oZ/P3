@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://kit.fontawesome.com/5b6aec5ba9.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/head-style.css">
+    <link rel="stylesheet" href="./css/headpage-style.css">
     <link rel="stylesheet" href="./css/foot-style.css">
+    <link rel="stylesheet" href="./css/body-index.css">
+    <link rel="stylesheet" href="./css/presentation-index.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,20 +18,24 @@
 </head>
 <body>
     <header>
-        <div id="entete-icone" >
+        <div id="entete-icone">
             <img src="images/logo/ohmyfood.png" alt="logo" title="OhMyFood"/>
-        </div>
-        <div id="localisation">
-            <i class="fa-solid fa-location-dot"></i>
-            <p class="roboto">Paris, Belleville</p>
-        </div>
-        <div id="description">
-            <h1 class="roboto" >Réserver le menu qui vous convient</h1>
-            <p class="roboto">Découvrez les restaurants d'exception, séléctionnés par nos soins</p>
-			<button  id="button1" type="button"> Explorer nos restaurants</button>     
         </div>
     </header>
     <main>
+        <div id="presentation"></div>
+            <div id="localisation">
+                <form method="get" action="traitement.php" class="forme">
+                    <i class="fa-solid fa-location-dot" id="Iconelocalisation"></i>
+                    <input type="text" name="recherche" id="recherche" placeholder="Paris, Belleville" size="40" />
+                </form>
+            </div>
+            <div id="description">
+                <h1 class="roboto" >Réserver le menu qui vous convient</h1>
+                <p class="roboto">Découvrez les restaurants d'exception, séléctionnés par nos soins</p>
+	    		<button  id="button1" type="button"> Explorer nos restaurants</button>     
+            </div>
+        </div>
         <section id="section1">
             <h2>Fonctionnement</h2>
             <div id="section1-cardm1">

@@ -5,20 +5,38 @@
     font-family: 'Roboto', sans-serif;
     display: flex;
     position: relative;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+    margin: 10px;
+    cursor: pointer;
 }
 
+.card:hover > .survolcard{
+    content: ' ';
+    transform: translateX(-20%);
+    background-color: #99E2D0;
+    height: auto;
+    width: 20%;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    display: flex;
+}
+.card:hover > .circle-check:{
+    filter: invert(1);
+    font-size: 140%;
+    z-index: 5055;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .card-description{
-    box-shadow: 0px 5px 20px #999;
-    max-width: 80%;
-    width: 80%;
-    background-color: white;
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    padding: 10px;
-    margin: 10px 0 10px 10px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 .card h3{
-    max-width:85%;
+    max-width:100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -26,33 +44,25 @@
     font-weight: bold;
 }
 .para{
-    display: flex;
-    justify-content: space-between;
-    max-width: 80%;
+    padding: 5px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 .card p{
     font-size: 90%;
     padding-top: 7px;
-}
-.survolcard{
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;   
+}/*
+.survolcard:hover{
+    content: ' ';
+    transform: translateX(-20%);
     background-color: #99E2D0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
     height: auto;
     width: 20%;
-    margin: 10px 10px 10px 0px;
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
-}
-.circle-check{
-    filter: invert(1);
-    font-size: 140%;
-}
+
+}*/
+
 .sous-titre{
     max-width: 70%;
     white-space: nowrap;
@@ -60,5 +70,8 @@
     text-overflow: ellipsis;
 }
 .price{
+    display: flex;
     font-weight: 700;
+    align-items: flex-end;
+    padding-right: 5px;
 }

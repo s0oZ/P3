@@ -43,4 +43,31 @@ main{
     font-family: 'Shrikhand', cursive;
     font-size: 180%;
     padding:40px 0 0px 15px;
+ }
+@media screen and (min-width:768px){
+    .cadre-image{
+        width: 90%;
+        margin: auto;
+        box-shadow: 20px -10px 10px #999;
     }
+    .favoris{
+        box-shadow: 5px -10px 10px -1px #999;
+    }
+    .orga{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .menu{
+        width: 48%;
+    }
+    .desserts{
+        margin: auto;
+        width: 55%;
+    }
+}
+@media screen and (min-width:1025px){
+
+    .cadre-image{
+        max-width: 60%;
+    }
+}
