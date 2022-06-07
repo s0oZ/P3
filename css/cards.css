@@ -21,14 +21,11 @@
     border-top-right-radius: 15px;
     border-bottom-right-radius: 15px;
     display: flex;
+    justify-content: flex-start;
 }
-.card:hover > .circle-check:{
+.survolcard i{
     filter: invert(1);
-    font-size: 140%;
-    z-index: 5055;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+}
 }
 .card-description{
     display: flex;

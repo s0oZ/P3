@@ -33,7 +33,7 @@ body h2{
     width: 50%;
     position: relative;
   }
-body #button2:hover:after{
+body #button2:hover::after{
     content: ' ';
     position: absolute;
     top: 0;

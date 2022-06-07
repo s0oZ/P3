@@ -23,7 +23,7 @@
         </div>
     </header>
     <main>
-        <div id="presentation"></div>
+        <div id="presentation">
             <div id="localisation">
                 <form method="get" action="traitement.php" class="forme">
                     <i class="fa-solid fa-location-dot" id="Iconelocalisation"></i>
@@ -31,90 +31,98 @@
                 </form>
             </div>
             <div id="description">
-                <h1 class="roboto" >Réserver le menu qui vous convient</h1>
-                <p class="roboto">Découvrez les restaurants d'exception, séléctionnés par nos soins</p>
-	    		<button  id="button1" type="button"> Explorer nos restaurants</button>     
+                <div id="reserv">
+                    <h1 class="roboto" >Réserver le menu qui vous convient</h1>
+                    <p class="roboto">Découvrez les restaurants d'exception, séléctionnés par nos soins</p>
+                </div>
+                <button  id="button1" type="button"><span id='but1' class="roboto">Explorer nos restaurants</span></button>     
             </div>
         </div>
         <section id="section1">
-            <h2>Fonctionnement</h2>
+            <h2 class="roboto">Fonctionnement</h2>
             <div id="section1-cardm1">
                 <div class="cardm1" id="cardm1-1">
-                    <p>1</p>
-                    <i class="fa-solid fa-mobile-screen-button"></i>
-                    <h3>Choisissez un restaurant</h3>
+                    <span class="number"><p>1</p></span>
+                    <span class="icdesc roboto"><p><i class="fa-solid fa-mobile-screen-button icoo"></i>Choisissez un restaurant</p></span>
                 </div>
                 <div class="cardm1" id="cardm1-2">
-                    <p>2</p>
-                    <i class="fa-solid fa-bars"></i>
-                    <h3>Composez votre menu</h3>
+                    <span class="number"><p>2</p></span>
+                    <span class="icdesc roboto"><p><i class="fa-solid fa-bars icoo"></i>Composez votre menu</p></span>
                 </div>
                 <div class="cardm1" id="cardm1-3">
-                    <p>3</p>
-                    <i class="fa-solid fa-store"></i>
-                    <h3>Dégustez au restaurant</h3>
+                    <span class="number"><p>3</p></span>
+                    <span class="icdesc roboto"><p><i class="fa-solid fa-store icoo"></i>Dégustez au restaurant</p></span>
                 </div>
             </div>        
         </section>
         <section id="restaurants">
-            <h2>Restaurants</h2>
-            <div class="restaurant">
-                <div class="restaurant__image">
-                    <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du goût" title="La Palette du goût"/>
-                </div>
-                <div class="cardm1-body">                        
-                    <div class="cardm1-title">
-                        <h4>La palette du goût</h4>
-                        <p>Ménilmontant</p>
+            <h2 class="roboto">Restaurants</h2>
+            <div class="allcards roboto">
+                <div id="section2-cardm1">
+                    <div class="cardm2" id="cardm2-1">
+                    <a href="#">
+                    <div class="restaurant__image">
+                        <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La Palette du goût" title="La Palette du goût"/>
                     </div>
-                    <button></button>
+                    <div class="cardm1-body">                        
+                        <div class="cardm1-title">
+                            <h4>La palette du goût</h4>
+                            <p>Ménilmontant</p>
+                        </div>
+                        <button><i class="fa-regular fa-heart heart"></i></button>
+                    </div>
+                </a>
                 </div>
             </div>
             <div id="section2-cardm2">
                 <div class="cardm2" id="cardm2-2">
+                    <a href="#">
                     <div class="cardm1-image">
                         <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée" title="La note enchantée"/>
                     </div>
                     <div class="cardm1-body">
-                        <div class="cardm1-title">
+                        <div class="cardm1-title ">
                             <h4>La note enchantée</h4>
                             <p>Charonne</p>
                         </div>
-                        <div class="coeur">
-                        </div>
+                        <button><i class="fa-regular fa-heart heart"></i></button>
                     </div>
+                </a>
                 </div>
             </div>
             <div id="section2-cardm2">
                 <div class="cardm2" id="cardm2-3">
-                    <div class="cardm1-image">
-                        <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" title="A la française"/>
-                    </div>
-                    <div class="cardm1-body">
-                        <div class="cardm1-title">
-                            <h4>A la française</h4>
-                            <p>Cité Rouge</p>
+                    <a href="#">
+                        <div class="cardm1-image">
+                            <img src="images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française" title="A la française"/>
                         </div>
-                        <div class="coeur">
-                        </div>
+                        <div class="cardm1-body">
+                            <div class="cardm1-title">
+                                <h4>A la française</h4>
+                                <p>Cité Rouge</p>
+                            </div>
+                          <button><i class="fa-regular fa-heart heart"></i></button>
                     </div>
+                </a>
                 </div>
             </div>
             <div id="section2-cardm2">
                 <div class="cardm2" id="cardm2-4">
-                    <div class="cardm1-image">
-                        <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens"/>
-                    </div>
-                    <div class="cardm1-body">
-                        <div class="cardm1-title">
-                            <h4>Le délice des sens</h4>
-                            <p>Folie-Méricourt</p>
+                    <a href="#">
+                        <div class="cardm1-image">
+                            <img src="images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens" title="Le délice des sens"/>
                         </div>
-                        <div class="coeur">
-                        </div>
+                        <div class="cardm1-body">
+                            <div class="cardm1-title">
+                                <h4>Le délice des sens</h4>
+                                <p>Folie-Méricourt</p>
+                            </div>
+                            <button><i class="fa-regular fa-heart heart"></i></button>
                     </div>
+                    </a>
                 </div>
             </div>
+        </div>
         </section>
     </main>
     <footer>
