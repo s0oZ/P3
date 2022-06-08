@@ -1,56 +1,29 @@
 @import "Normalize.css";
 @import "reset.css";
 
-    header{
-        display: flex;
-        width: 100%;
-    }
-    header a{
-        font-size: 140%;
-        padding-left: 30px;
-        text-decoration: none;
-        color: black;
-    }
-    #entete-icone{
-        display: flex;
-        width: 100%;
-        margin: 20px 0;
-        align-items: center;
-    }
-    #entete-icone img{
-        width: 50%;
-        margin: auto;
-    }
-    #logoentete{
-        display: flex;
-        justify-content: center;
-        width: 50%;
-        padding-left: 60px;
-    }
-
-
-    header{
-        display: flex;
-        width: 100%;
-    }
-    header a{
-        font-size: 240%;
-        padding-left: 30px;
-        text-decoration: none;
-        color: black;
-        flex-grow: 2;
-    }
-    #entete-icone{
-        display: flex;
-        justify-content: flex-start;
-        width: 100%;
-        margin: 20px 0;
-        align-items: center;
-    }
-    #logoentete{
-        display: flex;
-        justify-content: center;
-        width: 40%;
-        padding-left: 60px;
-        padding-right: 30%;
-    }
+header{
+    display: flex;
+    width: 100%;
+}
+header a{
+    font-size: 140%;
+    padding-left: 30px;
+    text-decoration: none;
+    color: black;
+}
+#entete-icone{
+    display: flex;
+    width: 100%;
+    margin: 20px 0;
+    align-items: center;
+}
+#entete-icone img{
+    width: 50%;
+    margin: auto;
+}
+#logoentete{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    padding-left: 60px;
+}

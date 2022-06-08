@@ -11,26 +11,11 @@
     margin: 10px;
     cursor: pointer;
 }
-
-.card:hover > .survolcard{
-    content: ' ';
-    transform: translateX(-20%);
-    background-color: #99E2D0;
-    height: auto;
-    width: 20%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    display: flex;
-    justify-content: flex-start;
-}
-.survolcard i{
-    filter: invert(1);
-}
-}
 .card-description{
     display: flex;
     width: 100%;
     justify-content: space-between;
+    position: relative;
 }
 .card h3{
     max-width:100%;
@@ -48,17 +33,7 @@
 .card p{
     font-size: 90%;
     padding-top: 7px;
-}/*
-.survolcard:hover{
-    content: ' ';
-    transform: translateX(-20%);
-    background-color: #99E2D0;
-    height: auto;
-    width: 20%;
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-
-}*/
+}
 
 .sous-titre{
     max-width: 70%;
@@ -71,4 +46,35 @@
     font-weight: 700;
     align-items: flex-end;
     padding-right: 5px;
+}
+.survolcard{
+    background-color: #99E2D0;
+    width: 0%;
+    height: 100%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    right: 0;
+    position: absolute;
+    transform-origin: right;
+}
+.survolcard:hover{
+    animation-name: greenfly;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-delay: 0s;
+    animation-iteration-count: 1;
+    position: absolute;
+}
+
+@keyframes greenfly{
+    0% {
+        transform: scaleX(0);
+    }
+    99%{
+        transform: scaleX(1);
+        width: 20%;
+    }
+    100%{
+        transform: scaleX(0);
+    }
 }
