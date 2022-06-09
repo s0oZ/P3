@@ -1,4 +1,3 @@
-@media screen and (max-width:767px) {
     .roboto{
         font-family: 'Raleway', sans-serif;
       }
@@ -20,7 +19,11 @@
     }
     .forme{
         box-sizing: border-box;
-
+        display: flex;
+        justify-content: center;
+    }
+    main input{
+        border-width: 0;
     }
     #description{
         display: flex;

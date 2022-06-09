@@ -15,7 +15,6 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    position: relative;
 }
 .card h3{
     max-width:100%;
@@ -25,6 +24,7 @@
     font-size: 115%;
     font-weight: bold;
 }
+
 .para{
     padding: 5px;
     white-space: nowrap;
@@ -50,31 +50,33 @@
 .survolcard{
     background-color: #99E2D0;
     width: 0%;
-    height: 100%;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     right: 0;
-    position: absolute;
-    transform-origin: right;
+    position: relative;
+
 }
-.survolcard:hover{
-    animation-name: greenfly;
-    animation-duration: 1s;
-    animation-timing-function: linear;
-    animation-delay: 0s;
-    animation-iteration-count: 1;
+.survolcard::before{
+    content: ' ' ;
+    width: 20%;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+    right: 0;
+    background-color: #99E2D0;
     position: absolute;
+    animation: greenfly 1s forwards reverse; 
 }
+.survolcard:not(active)::before{
+    animation: greenfly 1s forwards reverse; 
+}
+
 
 @keyframes greenfly{
     0% {
-        transform: scaleX(0);
-    }
-    99%{
-        transform: scaleX(1);
-        width: 20%;
+        transform: translateX(0);
     }
     100%{
-        transform: scaleX(0);
+        transform: translateX(100%);
+        width: 20%;
     }
 }
