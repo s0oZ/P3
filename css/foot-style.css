@@ -4,8 +4,9 @@
     font-family: 'Raleway', sans-serif;
     font-size: 90%;
 }
-a {
+footer li a{
     text-decoration: none;
+    color: white;
 }
 footer li {
     color: white;
