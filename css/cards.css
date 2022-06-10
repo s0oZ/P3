@@ -25,10 +25,13 @@
     font-size: 115%;
     font-weight: bold;
     display: flex;
+    padding-top: 5px;
+    padding-left: 5px;
 }
 
 .para{
-    padding: 5px;
+    display: flex;
+    flex-direction: column;
     white-space: nowrap;
     overflow: hidden;
     z-index: 1;
@@ -36,10 +39,12 @@
 .card p{
     font-size: 90%;
     padding-top: 7px;
+    padding-left: 5px;
+    padding-bottom: 5px;
 }
 
 .sous-titre{
-    max-width: 70%;
+    max-width: 100%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -60,13 +65,6 @@
     border-top-right-radius: 15px;
     right: 0;
     position: relative;
-
-}
-.card:hover .survolcard {
-    animation: greenfly 1s linear forwards; 
-}
-.card:hover .circle-check {
-    animation: greenfly 1s linear forwards; 
 }
 .circle-check{
     display: flex;
@@ -78,6 +76,24 @@
     right: 50%;
     transform: translate(50%,-50%);
 }
+.card:hover .card-description{
+    animation: smallpara 1s linear forwards;
+}
+@keyframes smallpara{
+    0%{
+        width: 100%;
+    }
+    100%{
+        width: 75%;
+    }
+}
+.card:hover .survolcard {
+    animation: greenfly 1s linear forwards; 
+}
+.card:hover .circle-check {
+    animation: greenfly 1s linear forwards; 
+}
+
 @keyframes greenfly{
     0% { 
         width: 0; 
