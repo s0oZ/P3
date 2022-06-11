@@ -1,0 +1,28 @@
+#loader{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color:grey;
+    z-index: 500;
+    animation: loader-grey 3s forwards;        
+}
+#spinner{
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    z-index: 501;
+    color: red;
+    position: relative;
+    top: 50%;
+    right: 50%;
+}
+
+@keyframes loader-grey{
+    0%{
+        opacity: 3;
+    }
+    100%{
+        opacity: 0;
+        z-index: -200;
+    }
+}

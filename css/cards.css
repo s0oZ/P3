@@ -87,7 +87,7 @@
     animation: greenfly 1s linear forwards; 
 }
 .card:hover .circle-check {
-    animation: greenfly2 1s forwards; 
+    animation: greenfly2 1000ms 1 linear forwards;
 }
 
 @keyframes greenfly{
