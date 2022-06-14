@@ -2,6 +2,7 @@
     position: absolute;
     height: 100%;
     width: 100%;
+    max-width: 1024px;
     background-color:grey;
     z-index: 500;
     animation: loader-grey 10s forwards;        

@@ -115,19 +115,35 @@ h4{
     font-weight: bold;
     margin: 0.3em 0;
 }
-.heart{
+.hearts{
     display: flex;
     width: 20%;
-    justify-content: center;
-    align-items: center;
-    padding: 3px;
-    z-index: 10;
+    position: relative;
 }
-.fa-heart:active::before{
-    content: "\f004";
+.heart{
+    position: absolute;
     display: flex;
-    width: 20%;
-    justify-content: center;
-    align-items: center;
-    background-image: linear-gradient(0deg, #ff79da 0%, #9356dc 100%);
+    z-index: 10;
+    right: 20px;
+    top: 50%;
+}
+.heartcolor{
+    opacity: 0;
+}
+.hearts:hover .heartcolor{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    color: #9356DC;
+    opacity: 1;
+}
+.hearts:hover .heart{
+    opacity: 0;
+}
+@media screen and (min-width: 1023px){
+    body{
+        max-width: 1024px;
+        margin: auto;
+    }
 }
