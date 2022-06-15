@@ -26,7 +26,7 @@ main{
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
     position: absolute;
-    bottom: 0;
+    bottom: -2px;
 }
 .coeur {
     display: flex;
@@ -37,6 +37,22 @@ main{
 }
 .heart{
     font-size: 150%;
+    position: absolute;
+    right: 20px;
+    bottom: 0px;
+}
+.heartcolor{
+    opacity: 0;
+    font-size: 150%;
+}
+.hearts:hover .heartcolor{
+    display: flex;
+    position: absolute;
+    right: 20px;
+    bottom: 0;
+    color: #9356DC;
+    opacity: 1;
+    transition: 2s;
 }
 .presentation h1{
     font-weight: 400;
@@ -68,6 +84,14 @@ main{
 @media screen and (min-width:1025px){
 
     .cadre-image{
-        max-width: 60%;
+        max-width: 40%;
+    }
+    .presentation{
+        max-width: 1024px;
+        margin:auto;
+    }
+    .orga{
+        max-width: 1024px;
+        margin: auto;
     }
 }

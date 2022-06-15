@@ -26,3 +26,17 @@ header a{
     justify-content: center;
     width: 50%;
 }
+@media screen and (min-width: 1024px){
+    header{
+        max-width: 1440px;
+        margin: auto;
+    }
+    #entete-icone img{
+        width: 40%;
+        margin: auto;
+    }
+    #entete-icone{
+        max-width: 1024px;
+        margin: auto;
+    }
+}

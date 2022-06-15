@@ -17,32 +17,29 @@ footer{
     background-color: rgba(2, 2, 2, 0.80);
     padding-bottom: 20px;
 }
-@media screen and (max-width:767px) {
-    footer li {
-        color: white;
-        padding-bottom: 10px;
-    }
-    footer img{
-        width: 25%;
-        padding: 23px 0 15px 23px;
-        filter: invert(1);
-    }
-    #foot-menu{
-        padding-left:  23px;
-    }
-    .foot-icone{
-        padding-right: 10px;
-    }
-    #hand{
-        font-size: 80%;
-    }
+footer img{
+    width: 40%;
+    padding: 23px 0 15px 23px;
+    filter: invert(1);
 }
-@media screen and (min-width:768px){
+#foot-menu{
+    padding-left:  23px;
+}
+.foot-icone{
+    padding-right: 10px;
+}
+#hand{
+    font-size: 80%;
+}
+@media screen and (min-width:768px) {
+    footer{
+        display: flex;
+        max-width: 1024px;
+        margin: auto;
+    }
     #foot{
         display: flex;
         flex-direction: column;
-        width: 100%;
-        margin: auto;
     }
 
     #foot img{
@@ -50,6 +47,7 @@ footer{
         margin: auto;
         margin-bottom: 30px;
         margin-top: 30px;
+        filter: invert(1);
     }
     footer ul{
         display: flex;
@@ -64,8 +62,9 @@ footer{
     .foot-icone{
         padding-right: 10px;
     }
+
 }
-@media screen and (min-width: 1024px){
+/*@media screen and (min-width: 1023px){
     .roboto-foot{
         font-size: 15px;
     }
@@ -74,5 +73,7 @@ footer{
     }
     footer{
         max-width: 1024px;
+        width: auto;
     }
 }
+*/

@@ -6,7 +6,6 @@
         display: flex;
         flex-direction: column;
         margin: auto;
-   
     }
     #localisation{
         display: flex;
@@ -16,6 +15,9 @@
         box-shadow: inset 0px 4px 4px -3px rgb(0 0 0 / 25%);
         padding: 5% 5%;
     }
+    #recherche::placeholder { 
+        text-align: center;
+     }
     .forme{
         box-sizing: border-box;
         display: flex;
