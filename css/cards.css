@@ -71,6 +71,7 @@
     filter: invert(1);
     opacity: 0;
     position: absolute;
+    
 }
 .card:hover .card-description{
     animation: smallpara 1s linear forwards;
@@ -96,20 +97,21 @@
         opacity: 0;
     }
     20% { 
+        width: 10px;
          opacity: 0.2;
     }
     50%{
+        width: 25px;
         opacity: 0.6;
     }
     100%{ 
-        width : 110px;
+        width : 70px;
         opacity : 1;
-        transform-origin: right;
+        transform-origin: -20px;
     }
 }
 @keyframes greenfly2{
     0% { 
-
         width: 0; 
         opacity: 0;
         top: 50%;
@@ -134,5 +136,68 @@
         top: 50%;
         right: 50%;
         transform: translate(50%,-50%) rotate(2turn);
+    }
+}
+.entrees{
+    animation: affichage1 2s linear ;
+}
+@keyframes affichage1{
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+.plats{
+    animation: affichage2 4s  linear ;
+}
+@keyframes affichage2{
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}.desserts{
+    animation: affichage3 6s linear ;
+}
+@keyframes affichage3{
+    0%{
+        opacity: 0;
+        transform: translateY(150px);
+    }
+    75%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+@media screen and (min-width: 1024px){
+    @keyframes greenfly{
+        0% { 
+            width: 0; 
+            opacity: 0;
+        }
+        20% { 
+             opacity: 0.2;
+        }
+        50%{
+            opacity: 0.6;
+        }
+        100%{ 
+            width : 120px;
+            opacity : 1;
+            transform-origin: -50px;
+        }
     }
 }

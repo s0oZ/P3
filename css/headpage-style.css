@@ -27,7 +27,7 @@ header a{
     width: 50%;
 }
 @media screen and (min-width: 1024px){
-    header{
+    body header{
         max-width: 1440px;
         margin: auto;
     }
