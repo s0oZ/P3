@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,MAAM,CAAA;EACF,UAAU,EAAE,IAAI;CACnB",
-    "sources": [
-        "head-style.scss"
-    ],
-    "names": [],
-    "file": "head-style.css"
-}

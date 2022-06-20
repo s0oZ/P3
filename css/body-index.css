@@ -135,7 +135,9 @@ h4{
     position: absolute;
     right: 20px;
     top: 50%;
-    color: #9356DC;
+    background-image: linear-gradient(to right bottom, pink, purple);
+    background-clip: text;
+    color: transparent;
     opacity: 1;
     transition: 2s;
 }

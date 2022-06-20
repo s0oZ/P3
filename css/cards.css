@@ -1,10 +1,6 @@
-@import "Normalize.css";
-@import "reset.css";
-
 .card{
     font-family: 'Roboto', sans-serif;
     display: flex;
-    position: relative;
     border-radius: 15px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
@@ -24,7 +20,6 @@
     text-overflow: ellipsis;
     font-size: 115%;
     font-weight: bold;
-    display: flex;
     padding-top: 5px;
     padding-left: 5px;
 }
@@ -60,21 +55,23 @@
 .survolcard{
     display: flex;
     background-color: #99E2D0;
-    width: 0%;
+    width: 0px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
-    right: 0;
     position: relative;
+}
+.price {
+    width: 25px; 
 }
 .circle-check{
     display: flex;
     filter: invert(1);
     opacity: 0;
     position: absolute;
-    
+
 }
 .card:hover .card-description{
-    animation: smallpara 1s linear forwards;
+    animation: smallpara 1s linear forwards; 
 }
 @keyframes smallpara{
     0%{
@@ -88,7 +85,8 @@
     animation: greenfly 1s linear forwards; 
 }
 .card:hover .circle-check {
-    animation: greenfly2 1000ms 1 linear forwards;
+    animation: greenfly2 1s  linear forwards; 
+    transform-origin: center center;
 }
 
 @keyframes greenfly{
@@ -107,97 +105,27 @@
     100%{ 
         width : 70px;
         opacity : 1;
-        transform-origin: -20px;
+        transform-origin: -20px; 
     }
 }
 @keyframes greenfly2{
     0% { 
         width: 0; 
         opacity: 0;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%,-50%) rotate(0turn);
+        transform:  rotate(0turn);
     }
     25% { 
          opacity: 0.25;
-         top: 50%;
-         right: 50%;
-         transform: translate(50%,-50%) rotate(0.5turn);
+         transform:  rotate(0.5turn);
     }
     50%{
         opacity: 0.5;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%,-50%) rotate(1turn);
+        transform:  rotate(1turn);
     }
     100%{ 
         width : 20%;
         opacity : 1;
-        top: 50%;
-        right: 50%;
-        transform: translate(50%,-50%) rotate(2turn);
-    }
-}
-.entrees{
-    animation: affichage1 2s linear ;
-}
-@keyframes affichage1{
-    0%{
-        opacity: 0;
-        transform: translateY(150px);
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-.plats{
-    animation: affichage2 4s  linear ;
-}
-@keyframes affichage2{
-    0%{
-        opacity: 0;
-        transform: translateY(150px);
-    }
-    50%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}.desserts{
-    animation: affichage3 6s linear ;
-}
-@keyframes affichage3{
-    0%{
-        opacity: 0;
-        transform: translateY(150px);
-    }
-    75%{
-        opacity: 0;
-    }
-    100%{
-        opacity: 1;
-        transform: translateY(0px);
-    }
-}
-@media screen and (min-width: 1024px){
-    @keyframes greenfly{
-        0% { 
-            width: 0; 
-            opacity: 0;
-        }
-        20% { 
-             opacity: 0.2;
-        }
-        50%{
-            opacity: 0.6;
-        }
-        100%{ 
-            width : 120px;
-            opacity : 1;
-            transform-origin: -50px;
-        }
+ 
+        transform: rotate(2turn);
     }
 }
