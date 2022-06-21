@@ -115,33 +115,35 @@ h4{
     font-weight: bold;
     margin: 0.3em 0;
 }
-.hearts{
+.hearts2{
     display: flex;
     width: 20%;
     position: relative;
 }
-.heart{
+
+.heart2{
     position: absolute;
     display: flex;
     z-index: 10;
     right: 20px;
     top: 50%;
 }
-.heartcolor{
+.heartcolor2{
     opacity: 0;
 }
-.hearts:hover .heartcolor{
+.hearts2:hover .heartcolor2{
     display: flex;
     position: absolute;
     right: 20px;
     top: 50%;
-    background-image: linear-gradient(to right bottom, pink, purple);
     background-clip: text;
+    -webkit-background-clip: text;
     color: transparent;
+    background-image: linear-gradient(to right bottom, pink, purple);
     opacity: 1;
     transition: 2s;
 }
-.hearts:hover .heart{
+.hearts2:hover .heart2{
     opacity: 0;
 }
 @media screen and (min-width: 1023px){

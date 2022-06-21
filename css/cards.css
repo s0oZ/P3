@@ -9,7 +9,7 @@
 }
 .card-description{
     display: flex;
-    width: 100%;
+    width: 96%;
     justify-content: space-between;
     padding: 5px 8px;
 }
@@ -55,7 +55,6 @@
 .survolcard{
     display: flex;
     background-color: #99E2D0;
-    width: 0px;
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
@@ -68,10 +67,12 @@
     filter: invert(1);
     opacity: 0;
     position: absolute;
-
+    width: 20px;
+    right: 30%;
+    top: 40%;
 }
 .card:hover .card-description{
-    animation: smallpara 1s linear forwards; 
+    animation: smallpara 1s linear forwards;
 }
 @keyframes smallpara{
     0%{
@@ -95,37 +96,32 @@
         opacity: 0;
     }
     20% { 
-        width: 10px;
+        width: 4%;
          opacity: 0.2;
     }
     50%{
-        width: 25px;
+        width: 10%;
         opacity: 0.6;
     }
     100%{ 
-        width : 70px;
+        width : 20%;
         opacity : 1;
-        transform-origin: -20px; 
+        transform-origin: -30px; 
     }
 }
 @keyframes greenfly2{
     0% { 
-        width: 0; 
         opacity: 0;
         transform:  rotate(0turn);
     }
     25% { 
          opacity: 0.25;
-         transform:  rotate(0.5turn);
     }
     50%{
         opacity: 0.5;
-        transform:  rotate(1turn);
     }
     100%{ 
-        width : 20%;
         opacity : 1;
- 
-        transform: rotate(2turn);
+        transform: rotate(1turn);
     }
 }

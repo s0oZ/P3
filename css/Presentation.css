@@ -1,6 +1,3 @@
-@import "Normalize.css";
-@import "reset.css";
-
 main{
     display: flex;
     flex-direction: column;
@@ -50,14 +47,17 @@ main{
     position: absolute;
     right: 20px;
     bottom: 0;
-    color: #9356DC;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right bottom, pink, purple);
     opacity: 1;
     transition: 2s;
 }
 .presentation h1{
     font-weight: 400;
     font-family: 'Shrikhand', cursive;
-    font-size: 180%;
+    font-size: 160%;
     padding:40px 0 0px 15px;
  }
 @media screen and (min-width:768px){
@@ -74,12 +74,13 @@ main{
         flex-wrap: wrap;
     }
     .menu{
-        width: 48%;
+        width: 35%;
+        margin: auto;
     }
     .desserts{
         margin: auto;
-        width: 55%;
     }
+
 }
 @media screen and (min-width:1025px){
 
@@ -94,4 +95,5 @@ main{
         max-width: 1024px;
         margin: auto;
     }
+    
 }

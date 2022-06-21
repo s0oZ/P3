@@ -5,7 +5,7 @@
     max-width: 1024px;
     background-color:grey;
     z-index: 500;
-    animation: loader-grey 10s forwards;        
+    animation: loader-grey 3s forwards;        
 }
 #spinner{
     height: 50px;
@@ -22,7 +22,7 @@
     bottom: 0;
     right: 0;
     left: 0;
-    animation: spin 3s linear infinite forwards;
+    animation: spin 2s linear infinite forwards;
 }
 
 
