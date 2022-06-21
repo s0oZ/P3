@@ -4,7 +4,7 @@ body{
     flex-direction: column;
     max-width: 100%;
 }
-body h2{
+body .menu h2{
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     margin-left: 10px;
