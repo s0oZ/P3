@@ -54,12 +54,34 @@ main{
     opacity: 1;
     transition: 2s;
 }
+.menu{
+    opacity: 0;
+}
+.entrees{
+    animation: menu 3s forwards
+}
+.plats{
+    animation: menu 3s  2s forwards;
+}
+.desserts{
+    animation: menu 3s 4s forwards;
+}
 .presentation h1{
     font-weight: 400;
     font-family: 'Shrikhand', cursive;
     font-size: 160%;
     padding:40px 0 0px 15px;
  }
+ @keyframes menu{
+    0%{
+        transform: translateY(150px);
+    }
+    100%{
+        transform: translatey(0px);
+        opacity: 1;
+    }
+ }
+ 
 @media screen and (min-width:768px){
     .cadre-image{
         width: 90%;

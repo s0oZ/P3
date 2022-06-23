@@ -43,14 +43,13 @@ body #button2:hover::after{
     z-index: 2000;
     cursor: pointer;
 }
-body h2:after{
+body .menu h2:after{
     content: ' ';
     display: flex;
     position: absolute;
     width: 40px;
     height: 2px;
     background: #99E2D0;
-    z-index: 200;
     bottom: -5px;
     left: 0px;
 }
