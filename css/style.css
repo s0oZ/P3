@@ -1,12 +1,12 @@
-@import "Normalize.css";
-@import "reset.css";
+@import "./Normalize.css";
+@import "./reset.css";
 
-@import "body.css";
-@import "body-index.css";
-@import "cards.css";
-@import "foot-style.css";
-@import "head-style.css";
-@import "headpage-style.css";
-@import "loader-index.css";
-@import "presentation-index.css";
-@import "presentation.css";
+@import "./body.css";
+@import "./body-index.css";
+@import "./cards.css";
+@import "./foot-style.css";
+@import "./head-style.css";
+@import "./headpage-style.css";
+@import "./loader-index.css";
+@import "./presentation-index.css";
+@import "./presentation.css";
