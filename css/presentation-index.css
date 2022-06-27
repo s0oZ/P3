@@ -70,18 +70,11 @@
         width: 70%;
         position: relative;
         margin: 40px 0 50px 0;
+        transition: 1.5s;
       }
-    body #button1:hover:after{
-        content: ' ';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: rgba(255,255,255,0.4);
-        border-radius: 31px;
-        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.808);
-        z-index: 2000;
+      body #button1:hover{
+        opacity: 0.8;
+        box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.938);
         cursor: pointer;
     }
     #but1{
