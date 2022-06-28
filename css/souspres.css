@@ -25,34 +25,27 @@ main{
     position: absolute;
     bottom: -2px;
 }
-.coeur {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-end;
-    padding-right: 25px;
-    padding-bottom: 7px;
-}
 .heart{
     font-size: 150%;
     position: absolute;
     right: 20px;
     bottom: 0px;
+
 }
 .heartcolor{
-    opacity: 0;
-    font-size: 150%;
-}
-.hearts:hover .heartcolor{
-    display: flex;
     position: absolute;
     right: 20px;
-    bottom: 0;
+    bottom: 0px;
+    opacity: 0;
+    font-size: 150%;
+    transition: 2s;
+}
+.hearts:hover .heartcolor{
     background-clip: text;
     -webkit-background-clip: text;
     color: transparent;
     background-image: linear-gradient(to right bottom, pink, purple);
     opacity: 1;
-    transition: 2s;
 }
 .menu{
     opacity: 0;

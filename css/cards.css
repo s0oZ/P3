@@ -6,13 +6,9 @@
     box-shadow: 0px 5px 20px #999;
     margin: 10px;
     cursor: pointer;
+    transition: all 1.5s;
 }
-.card-description{
-    display: flex;
-    width: 96%;
-    justify-content: space-between;
-    padding: 5px 8px;
-}
+
 .card h3{
     max-width:100%;
     white-space: nowrap;
@@ -51,6 +47,14 @@
     padding-right: 7px;
     padding-bottom: 5px;
     z-index: 2;
+    width: 25px; 
+}
+.card-description{
+    display: flex;
+    width: 96%;
+    justify-content: space-between;
+    padding: 5px 8px;
+    transition: all 1.5s;
 }
 .survolcard{
     display: flex;
@@ -58,70 +62,28 @@
     border-bottom-right-radius: 15px;
     border-top-right-radius: 15px;
     position: relative;
-}
-.price {
-    width: 25px; 
+    width: 0px;
+    transition: width 1.5s, max-width 1.5s;
 }
 .circle-check{
     display: flex;
     filter: invert(1);
     opacity: 0;
-    position: absolute;
     width: 20px;
-    right: 30%;
-    top: 40%;
+    margin: auto;
+    align-items: center;
+    transform-origin: center;
+}
+.card-description:hover + .survolcard{
+
+    width: 20%;
+
 }
 .card:hover .card-description{
-    animation: smallpara 1s linear forwards;
+    width: 75%;
 }
-@keyframes smallpara{
-    0%{
-        width: 100%;
-    }
-    100%{
-        width: 75%;
-    }
-}
-.card:hover .survolcard {
-    animation: greenfly 1s linear forwards; 
-}
-.card:hover .circle-check {
-    animation: greenfly2 1s  linear forwards; 
-    transform-origin: center center;
-}
-
-@keyframes greenfly{
-    0% { 
-        width: 0; 
-        opacity: 0;
-    }
-    20% { 
-        width: 4%;
-         opacity: 0.2;
-    }
-    50%{
-        width: 10%;
-        opacity: 0.6;
-    }
-    100%{ 
-        width : 20%;
-        opacity : 1;
-        transform-origin: -30px; 
-    }
-}
-@keyframes greenfly2{
-    0% { 
-        opacity: 0;
-        transform:  rotate(0turn);
-    }
-    25% { 
-         opacity: 0.25;
-    }
-    50%{
-        opacity: 0.5;
-    }
-    100%{ 
-        opacity : 1;
-        transform: rotate(1turn);
-    }
+.card:hover .circle-check{
+    transition: opacity 1.5s ,transform 1s  ease-out;
+    transform: rotate(360deg);
+    opacity: 1;
 }
