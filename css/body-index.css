@@ -136,11 +136,18 @@ h3{
     z-index: 10;
     right: 20px;
     top: 50%;
-    transition: 2s;
+
 }
 .heartcolor2{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-image: linear-gradient(to right bottom, pink, purple);
     opacity: 0;
-
+    transition: opacity 2s;
 }
 .hearts2:hover .heartcolor2{
     display: flex;

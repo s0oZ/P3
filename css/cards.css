@@ -6,7 +6,8 @@
     box-shadow: 0px 5px 20px #999;
     margin: 10px;
     cursor: pointer;
-    transition: all 1.5s;
+    transition:  1.5s;
+    overflow: hidden;
 }
 
 .card h3{
@@ -54,7 +55,7 @@
     width: 96%;
     justify-content: space-between;
     padding: 5px 8px;
-    transition: all 1.5s;
+    transition: width 1.5s;
 }
 .survolcard{
     display: flex;
@@ -63,7 +64,7 @@
     border-top-right-radius: 15px;
     position: relative;
     width: 0px;
-    transition: width 1.5s, max-width 1.5s;
+    transition: width 1.5s;
 }
 .circle-check{
     display: flex;
@@ -71,13 +72,12 @@
     opacity: 0;
     width: 20px;
     margin: auto;
+    justify-content: center;
     align-items: center;
-    transform-origin: center;
+    transform-origin: 50% 50%;
 }
-.card-description:hover + .survolcard{
-
+.card:hover .survolcard{
     width: 20%;
-
 }
 .card:hover .card-description{
     width: 75%;
